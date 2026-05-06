@@ -3,141 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radioage — Legal & Privacy</title>
+    <title>Privacy Policy for Radioage</title>
     <style>
-        :root {
-            --bg-color: #4a403a; /* The deep brown from your UI */
-            --card-color: #5c5048;
-            --text-primary: #f5f5f5;
-            --text-secondary: #d1c7bd;
-            --accent-cream: #d1c7bd; /* The cream color from your buttons */
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
             line-height: 1.6;
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
+            color: #333;
+            background-color: #fff;
             max-width: 800px;
-            width: 100%;
+            margin: 0 auto;
+            padding: 30px 20px;
         }
-
-        header {
-            text-align: center;
-            margin-bottom: 60px;
+        h1, h2, h3 {
+            color: #000;
         }
-
-        .logo {
-            font-size: 2.5rem;
-            font-family: "Georgia", serif; /* Fallback for a classic script/serif look */
-            font-style: italic;
-            color: var(--accent-cream);
+        h1 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
             margin-bottom: 10px;
         }
-
-        .agency-tag {
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--text-secondary);
-            opacity: 0.8;
+        strong {
+            color: #000;
         }
-
-        section {
-            background-color: var(--card-color);
-            padding: 40px;
-            border-radius: 24px; /* Matches your pill-shaped UI elements */
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
         }
-
-        h2 {
-            color: var(--accent-cream);
-            border-bottom: 1px solid rgba(209, 199, 189, 0.2);
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-
-        h3 {
-            color: var(--accent-cream);
-            font-size: 1.1rem;
-            margin-top: 25px;
-        }
-
-        p, li {
-            color: var(--text-secondary);
-            font-size: 1rem;
-        }
-
-        .contact-box {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid rgba(209, 199, 189, 0.1);
-            margin: 40px 0;
-        }
-
-        @media (max-width: 600px) {
-            section { padding: 25px; }
-            .logo { font-size: 2rem; }
+        p {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
+    <h1>Privacy Policy for Radioage</h1>
+    <p><strong>Effective Date:</strong> May 6, 2026</p>
 
-<div class="container">
-    <header>
-        <div class="logo">Radioage</div>
-        <div class="agency-tag">By adyantic</div>
-    </header>
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>Radioage</strong>. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application ("Radioage" or "the App").</p>
+    <p>Radioage is designed as a "Digital Antique"—a high-fidelity, minimalist analog radio experience. We deeply value your privacy. <strong>Radioage does not require you to create an account, does not have a backend database to store your personal information, and does not track your identity.</strong></p>
 
-    <section id="privacy">
-        <h2>Privacy Policy</h2>
-        <p><strong>Last Updated: May 2026</strong></p>
-        <p>At Radioage, we believe in high-fidelity privacy. This policy outlines how we handle your data in compliance with the Indian Digital Personal Data Protection (DPDP) Act.</p>
-        
-        <h3>1. Data Collection</h3>
-        <ul>
-            <li><strong>Minimal Footprint:</strong> We collect only essential device identifiers to optimize audio tuning.</li>
-            <li><strong>Subscription Data:</strong> Payment processing is handled securely via RevenueCat and Google Play Billing. We do not store financial details.</li>
-        </ul>
+    <h2>2. Information We Collect and How We Use It</h2>
+    
+    <h3>A. Precise Location Data (GPS)</h3>
+    <p>If you choose to enable the "Stations Near You" feature, Radioage will ask for your explicit permission to access your device's precise location (GPS coordinates).</p>
+    <ul>
+        <li><strong>How it is used:</strong> Your coordinates are used <strong>strictly on your device (client-side)</strong> to calculate the distance between you and available radio stations using mathematical (Haversine) formulas. This allows the app to filter stations within your chosen radius.</li>
+        <li><strong>How it is protected:</strong> Your precise location is <strong>never</strong> uploaded to our servers (we do not have any), nor is it sent to any third-party radio APIs. All filtering happens locally on your phone.</li>
+    </ul>
 
-        <h3>2. Usage</h3>
-        <p>Your data is used solely to provide and personalize the Radioage experience, manage your PRO entitlements, and ensure stream stability.</p>
+    <h3>B. Approximate Location Data (IP Address)</h3>
+    <p>When you launch the app for the first time, Radioage uses a third-party service (GeoJS) to detect your approximate location (Country level) based on your IP address.</p>
+    <ul>
+        <li><strong>How it is used:</strong> This is used solely to automatically set your default radio station country (e.g., India) so you can start listening immediately without manual configuration.</li>
+    </ul>
 
-        <h3>3. Your Rights</h3>
-        <p>You may request data erasure or withdraw consent at any time by contacting us or uninstalling the application.</p>
-    </section>
+    <h3>C. Local App Data</h3>
+    <p>We store your app preferences locally on your device. This includes:</p>
+    <ul>
+        <li>Your saved Favorite stations.</li>
+        <li>Your selected Theme (Light/Dark).</li>
+        <li>Your chosen Language filters and Radius settings.</li>
+        <li><strong>How it is protected:</strong> This data is saved directly to your device's local storage (<code>AsyncStorage</code>). We have no access to this data. It is deleted if you uninstall the app or clear the app's data.</li>
+    </ul>
 
-    <section id="terms">
-        <h2>Terms & Conditions</h2>
-        <h3>1. Service Agreement</h3>
-        <p>Radioage is an audio aggregator provided by adyantic. By using the app, you agree to these terms.</p>
-        
-        <h3>2. Content & Licensing</h3>
-        <p>We are an intermediary for third-party broadcasts. Intellectual property for the Radioage interface remains with adyantic.</p>
+    <h3>D. Subscription and Payment Information</h3>
+    <p>If you choose to purchase an in-app subscription, your payment will be processed securely by the respective app store (Apple App Store or Google Play Store) and managed via RevenueCat.</p>
+    <ul>
+        <li><strong>How it is used:</strong> We use RevenueCat to validate your subscription status and unlock premium features. RevenueCat may generate an anonymous user ID to track your subscription status across devices.</li>
+        <li><strong>How it is protected:</strong> We do not collect, process, or store your credit card numbers or direct payment information. All billing is securely handled directly by Apple or Google.</li>
+    </ul>
 
-        <h3>3. Subscriptions</h3>
-        <p>Early Bird and Standard tiers are managed via Google Play. Cancellations and refunds follow standard platform policies.</p>
-    </section>
+    <h2>3. Third-Party Services</h2>
+    <p>Radioage relies on the following third-party services to function. These services may receive your IP address when the app requests data from them:</p>
+    <ul>
+        <li><strong>Radio Browser API (<code>api.radio-browser.info</code>):</strong> An open-source community directory used to fetch the lists of radio stations and stream audio.</li>
+        <li><strong>GeoJS (<code>geojs.io</code>):</strong> A geolocation service used once on the first launch to detect your default country.</li>
+        <li><strong>RevenueCat:</strong> A subscription management service used to securely process and validate in-app purchases through Apple and Google.</li>
+    </ul>
+    <p>These third-party services have their own privacy policies governing how they handle standard web request data (like IP addresses).</p>
 
-    <div class="contact-box">
-        <p>ADYANTIC DESIGN AGENCY</p>
-        <p>Contact: [Your Email] | [Your Address, India]</p>
-    </div>
-</div>
+    <h2>4. Data Sharing and Disclosure</h2>
+    <p>Because we do not collect your personal information, <strong>we do not sell, trade, rent, or share your personal data with any third parties.</strong></p>
 
+    <h2>5. Data Retention</h2>
+    <p>All user preferences, favorites, and settings are stored locally on your device. We do not retain any of your data. You have complete control over your data and can erase it at any time by uninstalling Radioage from your device.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Radioage does not knowingly collect or solicit personal information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. If we make significant changes, we will notify you by updating the "Effective Date" at the top of this policy and, if applicable, providing an in-app notice.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+    <p><strong>Email:</strong> [Insert Developer/Company Email]<br>
+    <strong>Website:</strong> [Insert Developer/Company Website]</p>
 </body>
 </html>
